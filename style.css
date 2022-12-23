@@ -10,20 +10,41 @@ body {
 }
 
 body {
-    background: url('images/aaron-burden-5AiWn2U10cw-unsplash.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
 }
 
-img {
-    max-width: 100%;
-}
+.arrow {
+    border: solid white;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 3px;
+    height: 50px;
+    width: 50px; 
+    opacity: 0.5; 
+    position: absolute;
+    bottom: 50%;  
+    cursor: pointer;
+  }
 
-.container {
-    width: 100%;
-    margin: 0 auto;
-}
+  .arrow:hover {
+    opacity: 0.8;
+  }
+
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: 8%;
+  }
+
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    left: 83%;
+  }
+
+  
 
 
